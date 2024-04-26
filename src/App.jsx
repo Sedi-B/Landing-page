@@ -55,7 +55,9 @@ const App = () => {
      
  
     </div>
-    <div className="Socials" >
+    
+      <footer className= "foot">
+      <div className="Socials" >
       <a href="https://www.facebook.com">
         <FaFacebook />
       </a>
@@ -65,11 +67,7 @@ const App = () => {
       <a href="https://www.instagram.com">
         <FaInstagram />
       </a>
-    
-   
-    </div>
-      <footer className= "foot">
-        <p>@Phoshoko RR</p>
+    </div> <p>@Phoshoko RR (2023)</p>
       </footer>
     </div>
   );

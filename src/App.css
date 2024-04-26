@@ -51,7 +51,7 @@
 }
 
 .topnav a.active {
-  background-color: #bebab5;
+  /* background-color: #bebab5; */
   color: white;
 }
 
@@ -86,6 +86,7 @@
 }
 
 .pic {
+
   width: auto;
   height: 500px;
   border-radius: 30px;
@@ -94,19 +95,20 @@
 }
 
 .foot {
-  background-color: #8f8d8b;
-  color: #961515;
-  padding: 5px;
-  margin-bottom: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(188, 183, 183);
+  color: white;
+  text-align: center;
 }
 
 .column {
-  float: left;
+  float:left;
   width: 50%;
   
 }
-
-
 .row:after {
   content: "";
   display: table;
@@ -117,6 +119,9 @@
   align-items: center;
 }
 
+.row{
+ margin-top: 85px;  border: 1px solid rgb(30, 29, 29);
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -142,22 +147,26 @@
 
 .Socials {
   display:flex;
-  align-items: center;
-  align-content: center;
+  align-items: self-end;
+  align-content:end;
+  bottom: 0%;
 
 }
 
 .Socials a {
-  margin-right: 10px;
+  margin-left: 10px;
   color: #f33d3d;
   font-size: 24px;
+  align-items:stretch;
+
 }
 
 .rates {
   display: flex;
-  align-items:first baseline;
+  align-items:stretch;
   color: #bd1d2a;
   font-size: 10px;
+  margin-left: 10px;
 }
 
 
